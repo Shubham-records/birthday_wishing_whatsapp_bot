@@ -9,6 +9,10 @@ condition = Condition()
 # here i use webbrowser and pyautogui, because i have some issues with loading cookies and cache files in selenium, and also repeting login whatsapp
 # maybe due to selenium and webdriver versions issues, i will update that in selenium later
 # also pywhatkit does not properly working, some messages are not fully send
+# and also sorry but this code can not run in pythonanywhere, i tested there, but in python anywhere, they didn't give permission to display the tab
+# so if tab will not displayed then pyautogui can't work
+# in selenium we can use --headless, so the script will run in background not in foreground.
+# i will fix the issue with selenium, then i will update this code to selenium.
 
 class SendMessage:
 
