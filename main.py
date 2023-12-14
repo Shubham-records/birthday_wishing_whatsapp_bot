@@ -6,6 +6,9 @@ from time import sleep
 
 condition = Condition()
 
+# here i use webbrowser and pyautogui, because i have some issues with loading cookies and cache files in selenium,
+# maybe due to selenium and webdriver versions issues, i will update that in selenium later
+# also pywhatkit does not properly working, some messages are not fully send
 
 class SendMessage:
 
@@ -41,8 +44,10 @@ class SendMessage:
     def findtextbox(self):
         """click on text box"""
         print('start')
-        location = pyautogui.locateCenterOnScreen(f"{self.dir_path}\\data\\darktypemessage.png",confidence =0.6) # if you faced an error :- NotImplementedError: The confidence keyword argument is only available if OpenCV is installed.
-        try:                                                                                                     # solution:- pip install opencv-python
+        location = pyautogui.locateCenterOnScreen(f"{self.dir_path}\\data\\darktypemessage.png",confidence =0.6) 
+        # if you faced an error :- NotImplementedError: The confidence keyword argument is only available if OpenCV is installed.
+        # solution:- pip install opencv-python
+        try:                                                                                                     
             pyautogui.moveTo(location[0] + 150, location[1] + 5)
             pyautogui.click()
             print("success")
@@ -69,5 +74,5 @@ class SendMessage:
 run = SendMessage()
 run.send_meassages()
 
-# f'https://web.whatsapp.com/send/?phone=91{"phoneNo"}&text={"message"}' send message to phone numbers
+# f'https://web.whatsapp.com/send/?phone=91{phoneNo}&text=message' send message to phone numbers
 # https://web.whatsapp.com/accept?code=JtohUjDiBPQ2oU2h0Dqt0z  send message to groups
