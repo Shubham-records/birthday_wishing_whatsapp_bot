@@ -4,7 +4,15 @@ sheety_api_link = {
     'Trilochans_Family': "https://script.google.com/macros/s/AKfycbz1559ybBDr86qSpW4mtvowVTvQMRSZ8RZeUIL0oL5D2F9HDLI6D4ZIoYoreCFZUSyj/exec",   # google sheet link :- https://docs.google.com/spreadsheets/d/12xwcs7nLX_dY_kVmP9ZgrAohL-VWlDkEHCYTjDpbNqk/edit?usp=sharing
     # 'test file': 'https://script.google.com/macros/s/AKfycbyeQBi7hlwl1jnG4P-Nc1_tJVDcKubuDhWtZ-15l2iWl9ySK3MHfcdXGKlvreaB6pra-A/exec',       # google sheet link:-  https://docs.google.com/spreadsheets/d/1808jKypQ3On8PXkEaIuE-9HOVQW6atQYVVuojk2N1Nw/edit?usp=sharing
 }
+# here i use google app script api to get data from sheets
+# if i explian to you about app script
+# like mmm, if you have webapp, you code the interfarace from tkinter, database = google sheet or drive or whatever google workshop have,
+# and app script is making an api, or bridge between them, we can request upto 250/day
+# its better from google console, because first $300 free trail than paid
+# and its better than sheety api, because 200 requests per month.
 
+
+# i like to run the link of the app script in your webbrowser first, because its require authentication first.
 
 class SheetApi:
     def __init__(self):
