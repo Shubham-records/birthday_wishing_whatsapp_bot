@@ -1,0 +1,17 @@
+function doGet() {
+  var doc = SpreadsheetApp.getActiveSpreadsheet();
+  var values = doc.getDataRange().getValues();
+
+  var output = [];
+  for(var i = 0; i<values.length; i++) {
+    var row = {};
+    row["familyZone"]= values[i][0];
+    row["birthMonth"]= values[i][1];
+    row["birthDay"]= values[i][2];
+    row["anniversaryMonth"]= values[i][3];
+    row["anniversaryDate"]= values[i][4];
+    row["phoneNo"]= values[i][5];
+    output.push(row);
+  }
+  return ContentService.createTextOutput(JSON.stringify({data: output})).setMimeType(ContentService.MimeType.JSON);
+}
