@@ -6,7 +6,7 @@ from time import sleep
 
 condition = Condition()
 
-# here i use webbrowser and pyautogui, because i have some issues with loading cookies and cache files in selenium,
+# here i use webbrowser and pyautogui, because i have some issues with loading cookies and cache files in selenium, and also repeting login whatsapp
 # maybe due to selenium and webdriver versions issues, i will update that in selenium later
 # also pywhatkit does not properly working, some messages are not fully send
 
