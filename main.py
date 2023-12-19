@@ -8,7 +8,7 @@ condition = Condition()
 class SendMessage:
     def __init__(self):
         self.MyEmail = "subhampal342@gmail.com"
-        self.ToAddress = "1981monikapal@gmail.com",'subhampal342@gmail.com'
+        self.ToAddress = "patra.subash@gmail.com",'subhampal342@gmail.com'
         self.password = "yyuhafhopzlcwbqw"
 
     def send_meassages(self):
