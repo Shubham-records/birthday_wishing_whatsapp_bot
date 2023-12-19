@@ -13,7 +13,7 @@ with open('birthday_quotes.txt') as r:
 class Condition:
     def __init__(self):
         self.month = datetime.now().strftime("%B")
-        self.day = datetime.now().day
+        self.day = datetime.now().day+1
         self.today_wishing_messages = []
 
     def birthday_check(self):
